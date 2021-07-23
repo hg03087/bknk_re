@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="basicLayout">
+
+<th:block layout:fragment="css">
+    <link rel="stylesheet" th:href="@{/css/map.css}">
+</th:block>
+
+<th:block layout:fragment="js">
+    <script defer th:src="@{/js/map.js}"></script>
+</th:block>
+
+<th:block layout:fragment="content">
+    <div class="wholeMap">
+        <img src="/images/wMap.png" alt="전체지도" usemap="#wholeMap" >
+        <map name="wholeMap">
+            <area id=area1; name=area1; shape="poly" coords="224,70,221,88,177,111,193,121,190,135,194,147,143,163,132,177,147,187,163,190,182,176,221,213,234,211,252,209,272,195,281,198,295,179,301,142,282,130,275,116,284,99,266,83,246,71,243,80,229,68" alt="경기" onclick="moveToMap()" >
+            <area id=area2; name=area2; shape="poly" coords="217,228,210,207,169,206,170,218,164,224,154,220,165,244,182,241,183,264,190,300,203,313,237,296,251,306,265,299,274,311,284,300,307,307,324,303,322,282,307,274,312,250,309,240,327,220,355,220,373,190,344,181,337,169,328,181,316,170,304,184,297,178,281,198,270,195,257,208,240,211,218,217" alt="호서" onclick="moveToMap()">
+            <area id=area3; name=area3; shape="poly" coords="202,314,195,329,210,338,183,350,179,370,169,403,166,436,165,466,186,503,195,505,227,489,266,487,276,471,306,475,302,446,290,434,305,426,281,387,286,384,290,367,289,343,309,322,307,304,289,303,274,313,263,302,252,305,237,296" alt="호남" onclick="moveToMap()">
+            <area id=area4; name=area4; shape="poly" coords="312,454,324,458,434,398,451,362,451,340,459,304,446,304,450,249,435,168,420,184,375,195,358,221,328,220,312,240,305,267,321,282,319,294,308,314,288,348,282,389" alt="영남" onclick="moveToMap()">
+            <area id=area5; name=area5; shape="poly" coords="227,66,231,51,254,48,302,57,344,23,435,168,420,184,377,194,344,179,337,170,328,182,319,173,302,182,292,169,301,141,284,129,276,113,284,100,247,68,243,77" alt="영동"onclick="moveToMap()">
+            <area id=area6; name=area6; shape="poly" coords="209,529,184,548,197,574,228,566,262,540,241,521,230,529,211,530" alt="제주" onclick="moveToMap()">
+        </map>
+    </div>
+</th:block>
+</html>

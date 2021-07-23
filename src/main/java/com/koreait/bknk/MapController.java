@@ -8,8 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/map")
 public class MapController {
 
-    @GetMapping("/map")
-    public void map() {
+    @GetMapping("/wholeMap")
+    public void wholeMap() {
+    }
+    @GetMapping("/detailMap")
+    public void detailMap() {
     }
 
 }

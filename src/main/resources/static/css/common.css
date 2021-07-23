@@ -37,6 +37,7 @@ input { outline-style: none; }
     background-repeat: no-repeat;
     background-color: #e0e0e0;
 }
+
 .header__center {
     position: absolute;
     left: 150px;
